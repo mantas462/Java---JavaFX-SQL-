@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.SarasasController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="21.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Programa">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#quit" text="Quit" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Begimas">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Begiku sarasas" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToDistancija" text="Distancija" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="tableview" layoutX="85.0" layoutY="70.0" prefHeight="284.0" prefWidth="430.0" />
+      <Text fx:id="text" layoutX="249.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Begiku sarasas" />
+   </children>
+</AnchorPane>
